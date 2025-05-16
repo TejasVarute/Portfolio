@@ -1,0 +1,112 @@
+@media screen and (max-width: 932px) {
+    nav {
+        display: none;
+    }
+
+    .container-main,
+    .container-about,
+    .container-skills,
+    .container-education,
+    .container-project,
+    .container-contact {
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container-main {
+        position: relative;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .profile-image img {
+        height: 350px;
+        margin: 0;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .cv-button, .contact-button{
+        margin: 7px;
+    }
+
+    .about-main {
+        margin: 0;
+    }
+
+    .wrapper {
+        gap: 5px;
+    }
+
+    .contact-card {
+        width: 300px;
+    }
+
+    .project-card {
+        width: 100%;
+        height: 110%;
+    }
+
+    .project-card-title{
+        font-size: 18px;
+    }
+
+    .project-card-img{
+        height: 250px;
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    nav {
+        padding: 5px;
+    }
+
+    span {
+        width: 1ch;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .container-main {
+        margin: 200px;
+    }
+
+    .profile-image{
+        margin: 0;
+    }
+
+    .container-about,
+    .container-skills,
+    .container-education,
+    .container-project,
+    .container-contact {
+        margin-top: 50px;
+        margin-bottom: 150px;
+        height: 100%;
+    }
+
+    .about-main {
+        margin: 10px;
+    }
+    
+    .about-img {
+        display: none;
+    }
+
+    .card {
+        width: auto;
+    }
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Cartesian";
+    src: url("../assets/fonts/Cartesian-4B576.ttf");
+}
+
+@font-face {
+    font-family: "Direction";
+    src: url("../assets/fonts/Direction-R9e63.otf");
+}
+
+@font-face {
+    font-family: "Molgan";
+    src: url("../assets/fonts/MolganRegular-YqWj2.otf");
+}
+
+@font-face {
+    font-family: "Omegle";
+    src: url("../assets/fonts/OmegleRegular-gxDaq.otf");
+}
+
+@font-face {
+    font-family: "Quicking";
+    src: url("../assets/fonts/QuickingRegular-gw5KY.otf");
+}
