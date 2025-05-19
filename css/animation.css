@@ -25,11 +25,16 @@
   }
 }
 
-@keyframes blur {
-  from {
-    filter: blur(10px);
+@keyframes reveal {
+
+  0%,
+  100% {
+    opacity: 0.5;
+    letter-spacing: -1em;
   }
-  to {
-    filter: blur(0px);
+
+  50% {
+    opacity: 1;
+    letter-spacing: 0em;
   }
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tejas Varute | Portfolio</title>
     <link rel="icon" href="./assets/images/icon.png">
+    <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/font.css">
@@ -14,19 +15,25 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li class="name"><b>Tejas Varute</b></li>
-            <span></span>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="loader" id="loader">
+        <span>&lt;</span>
+        <span>LOADING</span>
+        <span>/&gt;</span>
+      </div>
 
-    <main>
+    <main id="main">
+        <nav>
+            <ul>
+                <li class="name"><b>Tejas Varute</b></li>
+                <span></span>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
         <section class="container-main">
             <div class="wrapper">
                 <div class="profile-image">
@@ -38,7 +45,9 @@
                     <p class="line2">Tejas Varute</p>
                     <p class="line3">Python Full Stack Developer</p>
                     <div class="button-container wrapper">
-                        <a class="cv-button" href="https://drive.usercontent.google.com/download?id=14FcS0I3M81u5elqbvd65SkQrs0aeT-LQ&export=download&authuser=0&confirm=t&uuid=746e4f59-08ea-40f3-beb8-d7e0ecc08476&at=ALoNOgn5xVumkxzZkBjcIZ5ue7t5:1747408902252">Download CV</a>
+                        <a class="cv-button"
+                            href="https://drive.usercontent.google.com/download?id=14FcS0I3M81u5elqbvd65SkQrs0aeT-LQ&export=download&authuser=0&confirm=t&uuid=746e4f59-08ea-40f3-beb8-d7e0ecc08476&at=ALoNOgn5xVumkxzZkBjcIZ5ue7t5:1747408902252">Download
+                            CV</a>
                         <a class="contact-button" href="#contact">Contact Info</a>
                     </div>
                     <a href="https://github.com/tejasvarute"><img class="icon" src="./assets/images/github.png"
@@ -137,6 +146,57 @@
                                     <p class="card-disc2">Experienced</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="card">
+                        <p class="card-title">Custom Software Developement</p>
+                        <div class="wrapper">
+                            <div class="wrapper icon-container">
+                                <img class='icon' src="./assets/images/python.png" alt="python icon">
+                                <div class="card-container">
+                                    <p class="card-disc1">Python</p>
+                                    <p class="card-disc2">Experienced</p>
+                                </div>
+                            </div>
+
+                            <div class="wrapper icon-container">
+                                <img class='icon' src="./assets/images/python libraries.png"
+                                    alt="python libraries icon">
+                                <div class="card-container">
+                                    <p class="card-disc1">Python Libraries</p>
+                                    <p class="card-disc2">Experienced</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="card-title">Other Known Languages</p>
+                        <div class="wrapper">
+                            <div class="wrapper icon-container">
+                                <img class='icon' src="./assets/images/c++.png" alt="c++ icon">
+                                <div class="card-container">
+                                    <p class="card-disc1">C/C++</p>
+                                </div>
+                            </div>
+
+                            <div class="wrapper icon-container">
+                                <img class='icon' src="./assets/images/java.png" alt="java icon">
+                                <div class="card-container">
+                                    <p class="card-disc1">Java</p>
+                                </div>
+                            </div>
+
+                            <div class="wrapper icon-container">
+                                <img class='icon' src="./assets/images/sql.png" alt="MySQL icon">
+                                <div class="card-container">
+                                    <p class="card-disc1">MySQL</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -286,11 +346,11 @@
 
             </div>
         </section>
+        
+        <footer>
+            <p class="card-disc2"> — Copyright © 2025 Tejas Varute — </p>
+        </footer>
     </main>
-
-    <footer>
-        <p class="card-disc2"> — Copyright © 2025 Tejas Varute — </p>
-    </footer>
 </body>
 
 </html>
