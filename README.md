@@ -44,4 +44,9 @@ Portfolio/
 ├── css/
 ├── js/
 ├── index.html
+```
 
+## 👨‍💻 Author
+
+- **Tejas Varute**
+- GitHub: [@TejasVarute](https://github.com/TejasVarute)

@@ -305,7 +305,7 @@ body nav ul li a:hover {
 
 .project-card {
     width: 450px;
-    height: 110%;
+    height: 650px;
     text-align: center;
     overflow: hidden;
 }
@@ -317,6 +317,7 @@ body nav ul li a:hover {
 
 .project-card-disc {
     margin: 30px;
+    height: 65px;
 }
 
 .project-card-img {
