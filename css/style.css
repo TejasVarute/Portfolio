@@ -75,6 +75,7 @@ body nav ul li a {
     font-size: 22px;
     letter-spacing: 3px;
     color: rgb(180, 180, 180);
+    transition: 0.5s;
 }
 
 .name {
@@ -86,6 +87,7 @@ body nav ul li a {
 
 body nav ul li a:hover {
     color: white;
+    transition: 1s;
 }
 
 #span {
@@ -136,7 +138,7 @@ body nav ul li a:hover {
 .line1 {
     font-size: 35px;
     font-family: "Cartesian";
-    margin-bottom: -60px;
+    margin-bottom: -55px;
     letter-spacing: 2px;
 }
 
@@ -146,19 +148,18 @@ body nav ul li a:hover {
     font-family: "Quicking";
     font-weight: lighter;
     letter-spacing: 5px;
-    margin-bottom: -30px;
+    margin-bottom: -25px;
 }
 
 .line3 {
-    margin-bottom: 20px;
     font-size: 35px;
     letter-spacing: 2px;
     font-family: "Direction";
 }
 
 .button-container {
-    margin-top: 35px;
-    margin-bottom: 25px;
+    margin-top: 55px;
+    margin-bottom: 15px;
 }
 
 .cv-button,

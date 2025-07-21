@@ -9,23 +9,12 @@
     .container-education,
     .container-project,
     .container-contact {
-        margin: 10px;
         margin-top: 20px;
         margin-bottom: 20px;
-        height: 100%;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .container-main {
-        position: relative;
-        height: 100%;
-        margin-bottom: 0;
     }
 
     .profile-image img {
-        height: 350px;
-        margin: 0;
+        height: 256px;
     }
 
     .about-img {
@@ -33,7 +22,7 @@
     }
 
     .cv-button, .contact-button{
-        margin: 7px;
+        margin: 0;
     }
 
     .about-main {
@@ -44,17 +33,14 @@
         gap: 5px;
     }
 
-    .contact-card {
-        width: 300px;
-    }
-
-    .project-card {
-        width: 100%;
-        height: 110%;
-    }
-
     .project-card-title{
         font-size: 18px;
+        height: 80%;
+    }
+
+    .project-card-disc{
+        font-size: 14px;
+        height: 80%;
     }
 
     .project-card-img{
@@ -81,7 +67,8 @@
     }
 
     .container-main {
-        margin: 200px;
+        margin-top: 200px;
+        padding: 50px;
     }
 
     .profile-image{
@@ -108,6 +95,12 @@
     }
 
     .card {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .project-card {
+        height: 100%;
         width: 100%;
     }
 }
