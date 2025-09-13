@@ -1,4 +1,4 @@
-# 💼 Tejas Varute's Developer Portfolio
+# 💼 Tejas Varute's Portfolio
 
 Welcome to my personal developer portfolio! This is a responsive and modern web-based portfolio that showcases my skills, projects, and experience as a passionate full-stack Python developer.
 
