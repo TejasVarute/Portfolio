@@ -1,116 +1,194 @@
-@media screen and (max-width: 768px) {
-    nav {
-        display: none;
+/* Standard/Small Desktop */
+@media screen and (max-width: 1366px) {
+    section {
+        padding: 90px 6% 70px;
+    }
+}
+
+/* Tablet Layout */
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 80px 6% 60px;
     }
 
-    .container-main,
-    .container-about,
-    .container-skills,
-    .container-education,
-    .container-project,
-    .container-contact {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .hero-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
     }
 
-    .profile-image img {
-        height: 150%;
+    .intro {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-summary {
+        margin: 0 auto 30px;
+    }
+
+    .container-about .about-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-main {
         width: 100%;
     }
 
-    .about-img {
-        display: none;
+    .about-img-container {
+        max-width: 400px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 60px 5% 50px;
+    }
+
+    /* Mobile Navigation */
+    .nav-toggle {
+        display: block;
+    }
+
+    .hero-wrapper {
+        width: 100%;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .profile-image-container,
+    .about-img-container {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .profile-image-container::before {
+        animation: none;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 240px;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-left: 1px solid var(--card-border);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 50px;
+        z-index: 1000;
+        box-shadow: -10px 0 30px rgba(15, 23, 42, 0.1);
+        overflow-y: auto;
+    }
+
+    nav ul.open {
+        transform: translateX(0);
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    /* Layout Grids to 1 column */
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cert-span-2 {
+        grid-column: span 1;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Timeline Adjustments */
+    .experience-timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-dot {
+        left: -20px;
+        width: 14px;
+        height: 14px;
+        top: 10px;
+    }
+
+    .timeline-card {
+        padding: 20px;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+}
+
+/* Small Mobile Layout */
+@media screen and (max-width: 480px) {
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
     }
 
     .cv-button,
     .contact-button {
-        margin: 0;
-    }
-
-    .about-main {
-        margin: 0;
-    }
-
-    .wrapper {
-        gap: 5px;
-    }
-
-    .project-card-title {
-        font-size: 18px;
-        height: 80%;
-    }
-
-    .project-card-disc {
-        font-size: 14px;
-        height: 80%;
-    }
-
-    .project-card-img {
-        height: 250px;
-    }
-
-}
-
-@media screen and (max-width: 1024px) {
-    nav {
-        padding: 5px;
-    }
-
-    span {
-        width: 1ch;
-    }
-
-    .name {
-        font-size: 25px;
-    }
-
-    .wrapper {
-        flex-wrap: wrap;
-    }
-
-    .container-main {
-        margin-top: 200px;
-        margin-bottom: 200px;
-        padding: 50px;
-    }
-
-    .profile-image {
-        margin: 0;
-    }
-
-    .container-about,
-    .container-skills,
-    .container-education,
-    .container-project,
-    .container-contact {
-        margin-top: 50px;
-        margin-bottom: 150px;
-        height: 100%;
-    }
-
-    .about-main {
-        margin: 10px;
-        width: 90%;
-    }
-
-    .about-img {
-        display: none;
-    }
-
-    .card {
-        height: 100%;
         width: 100%;
     }
 
-    .project-card {
-        height: 100%;
-        width: 100%;
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
-}
 
-@media screen and (max-width: 365px) {
-    .profile-image img {
-        height: 275px;
-        width: 275px;
+    .timeline-date {
+        margin-top: 5px;
     }
 }
