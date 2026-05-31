@@ -4,260 +4,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tejas Varute | Portfolio</title>
-    <link rel="icon" href="./assets/images/icon.png">
+    <title>Tejas Varute | Python Full Stack Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Tejas Varute - Python Full Stack Developer specializing in FastAPI, Django, React.js, and Agentic RAG architectures with 1 year of experience.">
+    <link rel="icon" href="./assets/images/animated portfolio 2.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Style sheets -->
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <script src="./javascript/script.js"></script>
+
+    <script src="./javascript/script.js" defer></script>
 </head>
 
 <body>
+    <!-- Background glows for modern design -->
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+
+    <!-- Loader Screen -->
     <div class="loader" id="loader">
         <span>&lt;</span>
-        <span>LOADING</span>
+        <span>Loading</span>
         <span>/&gt;</span>
     </div>
 
+    <!-- Main Content -->
     <main id="main">
         <nav>
-            <ul>
-                <li class="name"><b>Tejas Varute</b></li>
-                <span id="span"></span>
-                <li><a href="#about">About</a></li>
+            <a href="#" class="nav-brand">Tejas Varute</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#project">Project</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
-        <section class="container-main">
-            <div class="wrapper">
-                <div class="profile-image">
-                    <img src="./assets/images/profile.webp" alt="profile">
+        <!-- Hero Section -->
+        <section class="container-main" id="home">
+            <div class="hero-wrapper">
+                <div class="intro fade-up-element visible">
+                    <p class="line1">Hello, I'm</p>
+                    <h1 class="line2">Tejas Varute</h1>
+                    <p class="line3">Python Full Stack Developer</p>
+                    <p class="hero-summary">
+                        1 year of experience building REST APIs, AI-powered applications, and full-stack web solutions
+                        using FastAPI, Django, React.js, and Agentic RAG architectures.
+                    </p>
+                    <div class="button-container">
+                        <a class="cv-button"
+                            href="https://drive.google.com/file/d/1JolvlIf6QSooyVZr5na6BF1sEh0yvKma/view"
+                            target="_blank">Download CV</a>
+                        <a class="contact-button" href="#contact">Contact Me</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/tejasvarute" target="_blank" aria-label="GitHub Profile">
+                            <img class="icon" src="./assets/images/github.png" alt="github">
+                        </a>
+                        <a href="https://linkedin.com/in/tejasvarute" target="_blank" aria-label="LinkedIn Profile">
+                            <img class="icon" src="./assets/images/linkedin.png" alt="linkedin">
+                        </a>
+                    </div>
                 </div>
 
-                <div class="intro">
-                    <p class="line1">Hello, I'm</p>
-                    <p class="line2">Tejas Varute</p>
-                    <p class="line3">Python Full Stack Developer</p>
-                    <div class="button-container wrapper">
-                        <a class="cv-button"
-                            href="https://drive.usercontent.google.com/download?id=14FcS0I3M81u5elqbvd65SkQrs0aeT-LQ&export=download&authuser=0&confirm=t&uuid=746e4f59-08ea-40f3-beb8-d7e0ecc08476&at=ALoNOgn5xVumkxzZkBjcIZ5ue7t5:1747408902252">Download
-                            CV</a>
-                        <a class="contact-button" href="#contact">Contact Info</a>
+                <div class="profile-image fade-up-element visible">
+                    <div class="profile-image-container">
+                        <img src="./assets/images/animated portfolio.webp" alt="Tejas Varute Profile Picture">
                     </div>
-                    <a href="https://github.com/tejasvarute"><img class="icon" src="./assets/images/github.png"
-                            alt="github"></a>
-                    <a href="https://linkedin.com/in/tejasvarute"><img class="icon" src="./assets//images/linkedin.png"
-                            alt="linkedin"></a>
                 </div>
             </div>
         </section>
 
+        <!-- About Me Section -->
         <section id="about" class="container-about">
-            <div class="title">
-                <p class="title-subtext">Get to know More</p>
-                <p class="title-text">About Me</p>
+            <div class="title fade-up-element">
+                <span class="title-subtext">Get to know More</span>
+                <h2 class="title-text">About Me</h2>
             </div>
 
-            <div class="wrapper">
+            <div class="about-wrapper fade-up-element">
                 <div class="about-aside">
-                    <img class="about-img" src="./assets/images/profile1.png" alt="about-img">
+                    <div class="about-img-container">
+                        <img class="about-img" src="./assets/images/animated portfolio.webp"
+                            alt="Tejas Varute Illustration">
+                    </div>
                 </div>
 
                 <div class="about-main">
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-icon">💼</span>
+                            <h3>Experience</h3>
+                            <p>1+ Year Professional<br>Python & Full Stack</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-icon">🎓</span>
+                            <h3>Education</h3>
+                            <p>B.Tech ECE<br>2025 Graduate</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-icon">🚀</span>
+                            <h3>Projects</h3>
+                            <p>10+ Built<br>AI, Web & Desktop</p>
+                        </div>
+                    </div>
+
                     <div class="about-content">
-                        <p>Hi, <b>I'm Tejas</b> — a passionate and detail-oriented Full Stack Python Developer with a
-                            strong
-                            foundation in building dynamic, responsive, and user-friendly web applications.
-                            I specialize in Python-based technologies, with hands-on experience in both frontend and
-                            backend development.
-                            <br>From designing elegant user interfaces to managing databases, I thrive on crafting
-                            complete software solutions
-                            that are efficient, scalable, and intuitive. My development toolkit includes Django, MySQL,
-                            SQLite, CustomTkinter (for GUI
-                            applications), and version control with Git.
-                            <br>Beyond coding, I have a creative edge — I love pencil graphite shading and creating
-                            digital content,
-                            including managing my own YouTube channels.
-                            I'm always eager to learn, collaborate, and contribute to meaningful projects that make a
-                            difference.<br><br>
-                            <b>Let’s build something great together !</b>
+                        <p>
+                            Hi, <b>I'm Tejas</b> — a passionate and detail-oriented Full Stack Python Developer with a
+                            strong foundation in building dynamic, responsive, and user-friendly web applications. I
+                            specialize in backend API development, agentic workflows, and LLM integrations.
                         </p>
+                        <p>
+                            My professional toolkit includes <strong>FastAPI, Django, React.js, MySQL, SQLite, and
+                                Qdrant Vector Database</strong>. I have proven hands-on experience designing complete
+                            pipelines, from
+                            scraping and embedding documents to serving frontend CDN widgets and handling complex system
+                            integrations.
+                        </p>
+                        <p>
+                            Beyond code, I have a creative side — I enjoy graphite pencil shading and running digital
+                            content on my YouTube channels. I'm always eager to learn, collaborate, and build solutions
+                            that create actual business value.
+                        </p>
+                        <b>Let’s build something great together !</b>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Professional Experience Section -->
+        <section id="experience" class="container-experience">
+            <div class="title fade-up-element">
+                <span class="title-subtext">My Professional Timeline</span>
+                <h2 class="title-text">Work Experience</h2>
+            </div>
+
+            <div class="experience-timeline fade-up-element">
+                <!-- Walstar Technologies -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Jr. Python Developer</h3>
+                                <p class="timeline-company">Walstar Technologies Pvt. Ltd. (Kolhapur, On Site)</p>
+                            </div>
+                            <span class="timeline-date">Sep 2025 – Present</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li>Developed and maintained scalable backend services, REST APIs, and full-stack
+                                applications using FastAPI, React.js, MySQL, and SQLite.</li>
+                            <li>Ensured seamless data flow and integration between frontend components, backend
+                                services, and third-party systems.</li>
+                            <li>Built and integrated data processing, synchronization, and automated notification
+                                systems utilizing APIs, Pandas, Gmail, Slack, and desktop applications.</li>
+                            <li>Enabled efficient data management and automated workflows across multiple client and
+                                internal projects.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Maxgen Technologies -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Python Full Stack Developer Intern</h3>
+                                <p class="timeline-company">Maxgen Technologies Pvt. Ltd. (Pune, On Site)</p>
+                            </div>
+                            <span class="timeline-date">Dec 2024 – Jun 2025</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li>Built and maintained a responsive full-stack web application using Django, HTML, CSS,
+                                JavaScript, and SQLite.</li>
+                            <li>Successfully delivered essential modules including user authentication, order
+                                management, and an administrative dashboard during a 6-month internship.</li>
+                            <li>Followed Django's MVT architecture principles and utilized Git-based version control
+                                throughout the development lifecycle.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
         <section id="skills" class="container-skills">
-            <div class="title">
-                <p class="title-subtext">Get to know My</p>
-                <p class="title-text">Skills</p>
-
-                <div class="wrapper">
-                    <div class="card">
-                        <p class="card-title">Frontend Developement</p>
-                        <div class="wrapper">
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/html.png" alt="html icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">HTML</p>
-                                    <p class="card-disc2">Experienced</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/css.png" alt="css icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">CSS</p>
-                                    <p class="card-disc2">Experienced</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/js.webp" alt="js icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">javaScript</p>
-                                    <p class="card-disc2">Basic</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/react.svg" alt="react icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">ReactJS</p>
-                                    <p class="card-disc2">Familiar</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <p class="card-title">Backend Developement</p>
-                        <div class="wrapper">
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/python.png" alt="python icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">Python</p>
-                                    <p class="card-disc2">Experienced</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/django.png" alt="django icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">Django</p>
-                                    <p class="card-disc2">Experienced</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/drf.png" alt="drf icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">Django REST Framework</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wrapper">
-                    <div class="card">
-                        <p class="card-title">Custom Software Developement</p>
-                        <div class="wrapper">
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/python.png" alt="python icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">Python</p>
-                                    <p class="card-disc2">Experienced</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/python libraries.png"
-                                    alt="python libraries icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">Python Libraries</p>
-                                    <p class="card-disc2">Experienced</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <p class="card-title">Other Known Languages</p>
-                        <div class="wrapper">
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/c++.png" alt="c++ icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">C/C++</p>
-                                    <p class="card-disc2">Familiar</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/java.png" alt="java icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">Java</p>
-                                    <p class="card-disc2">Core</p>
-                                </div>
-                            </div>
-
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/sql.png" alt="MySQL icon">
-                                <div class="card-container">
-                                    <p class="card-disc1">MySQL</p>
-                                    <p class="card-disc2">Experienced</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            <div class="title fade-up-element">
+                <span class="title-subtext">What I Bring to the Table</span>
+                <h2 class="title-text">Technical Skills</h2>
             </div>
-        </section>
 
-        <section id="education" class="container-education">
-            <div class="title">
-                <p class="title-subtext">Get to know More</p>
-                <p class="title-text">Education</p>
-
-                <div class="wrapper">
-                    <div class="card">
-                        <p class="card-title">SSC</p>
-                        <div class="wrapper icon-container">
-                            <img class='icon' src="./assets/images/ssc-school.png" alt="scc school icon">
-                            <div class="card-container">
-                                <p class="card-disc1">Janata High School and Jr. College, Hupari</p>
-                                <p class="card-disc2">Score : 79.40%</p>
+            <div class="skills-grid fade-up-element">
+                <!-- Backend Development -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><span class="title-icon">⚙️</span> Backend Development</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/python.png" alt="Python">
+                            <div class="skill-details">
+                                <span class="skill-name">FastAPI</span>
+                                <span class="skill-level">Experienced</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <p class="card-title">HSC</p>
-                        <div class="wrapper icon-container">
-                            <img class='icon' src="./assets/images/hsc-college.png" alt="hsc school icon">
-                            <div class="card-container">
-                                <p class="card-disc1">Parisanna Ingrole Jr. College, Hupari</p>
-                                <p class="card-disc2">Score : 75.17%</p>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/django.png" alt="Django">
+                            <div class="skill-details">
+                                <span class="skill-name">Django / DRF</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/python.png" alt="Flask">
+                            <div class="skill-details">
+                                <span class="skill-name">Flask</span>
+                                <span class="skill-level">Familiar</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/python libraries.png" alt="SQLAlchemy">
+                            <div class="skill-details">
+                                <span class="skill-name">SQLAlchemy</span>
+                                <span class="skill-level">Experienced</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="wrapper">
-                    <div class="card">
-                        <p class="card-title">BTech</p>
-                        <div class="wrapper icon-container">
-                            <img class='icon' src="./assets/images/btech-college.png" alt="scc school icon">
-                            <div class="card-container">
-                                <p class="card-disc1">Sharad Institute of Technology, College of Engineering, Yadrav</p>
-                                <p class="card-disc2">Score : 8.4 GPA</p>
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><span class="title-icon">🌐</span> Web & Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/react.svg" alt="React">
+                            <div class="skill-details">
+                                <span class="skill-name">React JS + Vite</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/js.webp" alt="JavaScript">
+                            <div class="skill-details">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/html.png" alt="HTML">
+                            <div class="skill-details">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/css.png" alt="Tailwind">
+                            <div class="skill-details">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML & Databases -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><span class="title-icon">🧠</span> AI, ML & Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/python libraries.png" alt="Agentic RAG">
+                            <div class="skill-details">
+                                <span class="skill-name">Agentic RAG</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/sql.png" alt="Qdrant DB">
+                            <div class="skill-details">
+                                <span class="skill-name">Qdrant Vector DB</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/sql.png" alt="MySQL">
+                            <div class="skill-details">
+                                <span class="skill-name">MySQL / SQLite</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/python.png" alt="LLM Integration">
+                            <div class="skill-details">
+                                <span class="skill-name">LLM Integration</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Other Libraries -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title"><span class="title-icon">🛠️</span> Libraries & Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/python libraries.png" alt="Pandas">
+                            <div class="skill-details">
+                                <span class="skill-name">Pandas / NumPy</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/python libraries.png" alt="OpenCV">
+                            <div class="skill-details">
+                                <span class="skill-name">OpenCV / tkinter</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/github.png" alt="Git">
+                            <div class="skill-details">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-level">Experienced</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img class="icon" src="./assets/images/c++.png" alt="C++">
+                            <div class="skill-details">
+                                <span class="skill-name">VS Code / Postman</span>
+                                <span class="skill-level">Experienced</span>
                             </div>
                         </div>
                     </div>
@@ -265,133 +356,394 @@
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="project" class="container-project">
-            <div class="title">
-                <p class="title-subtext">Browse My Recent</p>
-                <p class="title-text">Projects</p>
+            <div class="title fade-up-element">
+                <span class="title-subtext">Browse My Recent</span>
+                <h2 class="title-text">Projects</h2>
+            </div>
 
-                <div class="wrapper">
-                    <div class="project-card">
-                        <p class="project-card-title">E-Commerce Site - Restaurant Management</p>
-                        <img class='project-card-img' src="./assets/images/restaurant project img.webp"
-                            alt="Restaurant Project img">
-                        <p class="project-card-disc">Python/Django, HTML, CSS, JS</p>
-                        <div class="button-container wrapper">
-                            <a class="cv-button"
-                                href="https://github.com/TejasVarute/Ecommerce_Restaurant_Project">Repository</a>
-                        </div>
+            <!-- Filter Buttons -->
+            <div class="project-filters fade-up-element">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="featured">Featured (Resume)</button>
+                <button class="filter-btn" data-filter="web">Web Applications</button>
+                <button class="filter-btn" data-filter="python">Python & Desktop</button>
+            </div>
+
+            <div class="projects-grid fade-up-element">
+                <!-- Agentic RAG System -->
+                <div class="project-card" data-category="featured web">
+                    <div class="project-img-container">
+                        <span class="project-badge">Featured</span>
+                        <img class="project-card-img" src="./assets/images/rag_project_img.png"
+                            alt="Agentic RAG System Preview">
                     </div>
-                    <div class="project-card">
-                        <p class="project-card-title">Apple India Clone</p>
-                        <img class='project-card-img' src="./assets/images/apple india project img.webp"
-                            alt="Apple clone Project img">
-                        <p class="project-card-disc">HTML, CSS, JS</p>
-                        <div class="button-container wrapper">
-                            <a class="cv-button" href="https://github.com/TejasVarute/Apple_clone">Repository</a>
-                            <a class="contact-button" href="https://tejasvarute.github.io/Apple_clone/">Live Preview</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <p class="project-card-title">Remind Me Later</p>
-                        <img class='project-card-img' src="./assets/images/remind me later project img.webp"
-                            alt="remind me later project img">
-                        <p class="project-card-disc">Python/Django, HTML, CSS, Bootstrap, JS</p>
-                        <div class="button-container wrapper">
-                            <a class="cv-button" href="https://github.com/TejasVarute/Remind-Me-Later">Repository</a>
-                            <a class="contact-button" href="https://youtu.be/NvcstRUOmh0">Demo
-                                Video</a>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Agentic RAG System</h3>
+                        <p class="project-card-disc">
+                            A multi-tenant Agentic RAG platform transforming website assets into smart chatbots
+                            deployable via a lightweight CDN widget. Leverages Qdrant vector databases, text
+                            scraping/chunking pipelines, and LLM automation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Qdrant DB</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="wrapper">
-                    <div class="project-card">
-                        <p class="project-card-title">Bank Locker Management System</p>
-                        <img class='project-card-img' src="./assets/images/locker system project img.webp"
-                            alt="Locker System project img">
-                        <p class="project-card-disc">Python, SQLite, Pandas, OpenCV, Face Recognition</p>
-                        <div class="button-container wrapper">
-                            <a class="contact-button" href="https://youtu.be/HpezaF5Lxm8">Demo
-                                Video</a>
-                        </div>
+                <!-- Restaurant Management System -->
+                <div class="project-card" data-category="featured web">
+                    <div class="project-img-container">
+                        <span class="project-badge">Featured</span>
+                        <img class="project-card-img" src="./assets/images/restaurant project img.webp"
+                            alt="Restaurant Management System Preview">
                     </div>
-                    <div class="project-card">
-                        <p class="project-card-title">Face detection based Attendance System</p>
-                        <img class='project-card-img' src="./assets/images/beyond rollcall project img.webp"
-                            alt="Attendance project img">
-                        <p class="project-card-disc">Python, Pandas, OpenCV</p>
-                        <div class="button-container wrapper">
-                            <a class="cv-button"
-                                href="https://github.com/TejasVarute/Automated-Attendance-System-using-Face-Detection-and-OCR">Repository</a>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Restaurant Management System</h3>
+                        <p class="project-card-disc">
+                            Role-based food ordering and admin analytics dashboard. Designed complete interfaces for
+                            carts, order placements, visual order tracking, and inventory updates using MVT pattern.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">HTML5/CSS3</span>
+                            <span class="tech-tag">JS</span>
+                            <span class="tech-tag">SQLite</span>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <p class="project-card-title">Elective Subject Allocation System</p>
-                        <img class='project-card-img' src="./assets/images/elective allocation project img.webp"
-                            alt="Project img">
-                        <p class="project-card-disc">Python, Pandas</p>
-                        <div class="button-container wrapper">
-                            <a class="cv-button"
-                                href="https://github.com/TejasVarute/Open-elective-allocator">Repository</a>
+                        <div class="project-links">
+                            <a class="repo-link" href="https://github.com/TejasVarute/Ecommerce_Restaurant_Project"
+                                target="_blank">Repository</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="wrapper">
-                    <div class="project-card">
-                        <p class="project-card-title">E-Commerce Site - Computer Sales</p>
-                        <img class='project-card-img' src="./assets/images/computer sales project img.webp"
-                            alt="Computer sales Project img">
-                        <p class="project-card-disc">HTML, CSS, JS</p>
-                        <div class="button-container wrapper">
-                            <a class="cv-button"
-                                href="https://github.com/TejasVarute/Computer_Sales_Website">Repository</a>
-                            <a class="contact-button" href="https://tejasvarute.github.io/Computer_Sales_Website/">Live
-                                Preview</a>
-                        </div>
+                <!-- Beyond the Rollcall -->
+                <div class="project-card" data-category="featured python">
+                    <div class="project-img-container">
+                        <span class="project-badge">Academic Final</span>
+                        <img class="project-card-img" src="./assets/images/beyond rollcall project img.webp"
+                            alt="Attendance System Project Preview">
                     </div>
-                    <div class="project-card">
-                        <p class="project-card-title">Resume Builder Website</p>
-                        <img class='project-card-img' src="./assets/images/ats resume project img.webp"
-                            alt="resume builder project img">
-                        <p class="project-card-disc">Python, Streamlit</p>
-                        <div class="button-container wrapper">
-                            <a class="cv-button" href="https://github.com/TejasVarute/Resume-Builder">Repository</a>
-                            <a class="contact-button" href="https://buildresume.streamlit.app/">Live Preview</a>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Beyond the Rollcall: Smart Attendance</h3>
+                        <p class="project-card-disc">
+                            Desktop attendance system utilizing face detection and OCR algorithms to scan student
+                            identity cards. Implemented reporting modules and interactive Customtkinter control panels.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">EasyOCR</span>
+                            <span class="tech-tag">Customtkinter</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="repo-link"
+                                href="https://github.com/TejasVarute/Automated-Attendance-System-using-Face-Detection-and-OCR"
+                                target="_blank">Repository</a>
+                            <a class="live-link"
+                                href="https://www.researchgate.net/publication/384288004_BEYOND_THE_ROLLCALL_SMART_STRATEGIES_FOR_ATTENDANCE"
+                                target="_blank">Read Paper</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Apple India Clone -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img-container">
+                        <img class="project-card-img" src="./assets/images/apple india project img.webp"
+                            alt="Apple Clone Preview">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Apple India Clone</h3>
+                        <p class="project-card-disc">
+                            Pixel-perfect replica of Apple India landing site demonstrating responsive transitions, grid
+                            cards, sliders, and static CSS assets.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="repo-link" href="https://github.com/TejasVarute/Apple_clone"
+                                target="_blank">Repository</a>
+                            <a class="live-link" href="https://tejasvarute.github.io/Apple_clone/" target="_blank">Live
+                                View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Remind Me Later -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img-container">
+                        <img class="project-card-img" src="./assets/images/remind me later project img.webp"
+                            alt="Remind Me Later Preview">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Remind Me Later</h3>
+                        <p class="project-card-disc">
+                            Task manager with scheduled task alerts. Supports creation of customized to-do list tasks
+                            and automatic background notification dispatchers.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="repo-link" href="https://github.com/TejasVarute/Remind-Me-Later"
+                                target="_blank">Repository</a>
+                            <a class="live-link" href="https://youtu.be/NvcstRUOmh0" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Locker System -->
+                <div class="project-card" data-category="python">
+                    <div class="project-img-container">
+                        <img class="project-card-img" src="./assets/images/locker system project img.webp"
+                            alt="Bank Locker System Preview">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Bank Locker Management</h3>
+                        <p class="project-card-disc">
+                            Secure desk app utilizing face recognition verification, logging user login activities, data
+                            synchronization, and automated vault alerts.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Face Recognition</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="live-link" href="https://youtu.be/HpezaF5Lxm8" target="_blank">Demo Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elective Subject Allocation -->
+                <div class="project-card" data-category="python">
+                    <div class="project-img-container">
+                        <img class="project-card-img" src="./assets/images/elective allocation project img.webp"
+                            alt="Elective allocator Preview">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Elective Subject Allocation</h3>
+                        <p class="project-card-disc">
+                            Algorithmic allocating engine handling college student elective choices sorted based on
+                            merit list, score ranks, and college guidelines.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="repo-link" href="https://github.com/TejasVarute/Open-elective-allocator"
+                                target="_blank">Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Sales Website -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img-container">
+                        <img class="project-card-img" src="./assets/images/computer sales project img.webp"
+                            alt="Computer Sales Preview">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Computer Sales E-Shop</h3>
+                        <p class="project-card-disc">
+                            Frontend client application presenting interactive product showcases, dynamic catalogs, cart
+                            status handling, and order summary templates.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="repo-link" href="https://github.com/TejasVarute/Computer_Sales_Website"
+                                target="_blank">Repository</a>
+                            <a class="live-link" href="https://tejasvarute.github.io/Computer_Sales_Website/"
+                                target="_blank">Live View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Builder Website -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img-container">
+                        <img class="project-card-img" src="./assets/images/ats resume project img.webp"
+                            alt="Resume Builder Preview">
+                    </div>
+                    <div class="project-card-body">
+                        <h3 class="project-card-title">Resume Builder Website</h3>
+                        <p class="project-card-disc">
+                            Sleek dashboard parsing information to output standard ATS-friendly PDF resumes. Implemented
+                            template selection and instant data rendering.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">JSON</span>
+                        </div>
+                        <div class="project-links">
+                            <a class="repo-link" href="https://github.com/TejasVarute/Resume-Builder"
+                                target="_blank">Repository</a>
+                            <a class="live-link" href="https://buildresume.streamlit.app/" target="_blank">Live View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Education Section -->
+        <section id="education" class="container-education">
+            <div class="title fade-up-element">
+                <span class="title-subtext">Academic Timeline</span>
+                <h2 class="title-text">Education</h2>
+            </div>
+
+            <div class="education-grid fade-up-element">
+                <!-- BTech -->
+                <div class="education-card">
+                    <div class="edu-icon-wrapper">
+                        <img class="icon" src="./assets/images/btech-college.png" alt="B.Tech College Icon">
+                        <h3>Bachelor of Technology</h3>
+                    </div>
+                    <p class="edu-school">
+                        Sharad Institute of Technology, College of Engineering, Ichalkaranji (Yadrav)<br>
+                        <b>Electronics & Computer Engineering</b>
+                    </p>
+                    <div class="edu-details">
+                        <span class="edu-score">CGPA: 8.4 / 10</span>
+                        <span class="edu-year">Class of 2025</span>
+                    </div>
+                </div>
+
+                <!-- HSC -->
+                <div class="education-card">
+                    <div class="edu-icon-wrapper">
+                        <img class="icon" src="./assets/images/hsc-college.png" alt="HSC College Icon">
+                        <h3>HSC (Science)</h3>
+                    </div>
+                    <p class="edu-school">
+                        Parisanna Ingrole Jr. College, Hupari<br>
+                        Rayat Education Society
+                    </p>
+                    <div class="edu-details">
+                        <span class="edu-score">Percentage: 75.17%</span>
+                        <span class="edu-year">Year: 2021</span>
+                    </div>
+                </div>
+
+                <!-- SSC -->
+                <div class="education-card">
+                    <div class="edu-icon-wrapper">
+                        <img class="icon" src="./assets/images/ssc-school.png" alt="SSC School Icon">
+                        <h3>SSC (General)</h3>
+                    </div>
+                    <p class="edu-school">
+                        Janata High School, Hupari
+                    </p>
+                    <div class="edu-details">
+                        <span class="edu-score">Percentage: 79.40%</span>
+                        <span class="edu-year">Year: 2019</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates & Achievements Section -->
+        <section id="certificates" class="container-certificates">
+            <div class="title fade-up-element">
+                <span class="title-subtext">Credentials & Recognitions</span>
+                <h2 class="title-text">Certifications & Achievements</h2>
+            </div>
+
+            <div class="certificates-wrapper fade-up-element">
+                <div class="certs-grid">
+                    <!-- Certificate 1 -->
+                    <div class="cert-card">
+                        <div class="cert-info">
+                            <h3>Python and Django Framework</h3>
+                            <p>Udemy Certification • Issued July 2025</p>
+                        </div>
+                        <a class="cert-link-btn"
+                            href="https://www.udemy.com/certificate/UC-102e0aa5-0cc4-4560-be0e-a30c482892b6/"
+                            aria-label="View Udemy Certificate">🔗</a>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="cert-card">
+                        <div class="cert-info">
+                            <h3>Python Programming</h3>
+                            <p>GUVI Certification • Issued Aug 2023</p>
+                        </div>
+                        <a class="cert-link-btn" href="https://www.guvi.in/certificate?id=yv11U6180W89mi3622"
+                            aria-label="View GUVI Certificate">🔗</a>
+                    </div>
+
+                    <!-- Publication -->
+                    <div class="cert-card cert-span-2">
+                        <div class="cert-info">
+                            <h3>Paper Publication: "Beyond the Rollcall: Smart Strategies for Attendance"</h3>
+                            <p>International Journal of Engineering Applied Sciences and Technology (IJEAST) • Vol. 09,
+                                Issue 04 • Sep 2024</p>
+                        </div>
+                        <a class="cert-link-btn" href="https://doi.org/10.33564/IJEAST.2024.v09i04.011" target="_blank"
+                            aria-label="Read Research Paper">🔗</a>
+                    </div>
+                </div>
+
+                <!-- Achievements Box -->
+                <div class="achievements-box">
+                    <h3>Academic & Extracurricular Milestones</h3>
+                    <p>Ranked in the top 15% of the Electronics and Computer Engineering class at SIT Yadrav.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact" class="container-contact">
-            <div class="title">
-                <p class="title-subtext">Get in touch</p>
-                <p class="title-text">Contact</p>
-                <div class="wrapper">
-                    <div class="contact-card">
-                        <div class="wrapper">
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/email.png" alt="email  icon">
-                                <a href="mailto:tvarute@gmail.com" class="cont-disc">tvarute@gmail.com</a>
-                            </div>
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/linkedin.png" alt="linkedin icon">
-                                <a href="https://linkedin.com/in/tejasvarute" class="cont-disc">Tejas Varute</a>
-                            </div>
-                            <div class="wrapper icon-container">
-                                <img class='icon' src="./assets/images/instagram.png" alt="instagram icon">
-                                <a href="https://www.instagram.com/t_n_varute" class="cont-disc">Tejas Varute</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="title fade-up-element">
+                <span class="title-subtext">Get in Touch</span>
+                <h2 class="title-text">Contact</h2>
             </div>
 
-            </div>
+            <div class="contact-wrapper fade-up-element">
+                <div class="contact-card">
+                    <div class="contact-grid">
+                        <!-- Email -->
+                        <a href="mailto:tvarute@gmail.com" class="contact-item">
+                            <img class="icon" src="./assets/images/email.png" alt="Email Icon">
+                            <span class="contact-label">Email</span>
+                            <span class="cont-disc">tvarute@gmail.com</span>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/in/tejasvarute" target="_blank" class="contact-item">
+                            <img class="icon" src="./assets/images/linkedin.png" alt="LinkedIn Icon">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="cont-disc">Tejas Varute</span>
+                        </a>
+
+                    </div>
+                    <p style="margin-top: 40px; font-size: 14px; text-align:center; color: var(--text-muted);">
+                        📍 Rendal, Kolhapur, Maharashtra, India
+                    </p>
+                </div>
         </section>
 
+        <!-- Footer -->
         <footer>
-            <p class="card-disc2"> — Copyright &copy; 2025 Tejas Varute — </p>
+            <p>— Copyright &copy; 2026 Tejas Varute. All Rights Reserved. —</p>
         </footer>
     </main>
 </body>
