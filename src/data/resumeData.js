@@ -13,10 +13,10 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/tejasvarute",
   github: "https://github.com/tejasvarute",
   googleDriveCV: "https://drive.google.com/file/d/1JolvlIf6QSooyVZr5na6BF1sEh0yvKma/view",
-  localResumePdf: "/Portfolio/Tejas_Varute_Resume.pdf",
-  profileImage: "/Portfolio/images/profile1.png",
-  avatarAnimated: "/Portfolio/images/animated portfolio.webp",
-  avatarIcon: "/Portfolio/images/animated portfolio 2.webp",
+  localResumePdf: "./Tejas_Varute_Resume.pdf",
+  profileImage: "./images/profile1.png",
+  avatarAnimated: "./images/animated portfolio.webp",
+  avatarIcon: "./images/animated portfolio 2.webp",
   availableForWork: true,
   summary: "Passionate Full Stack Python Developer with hands-on production experience in backend API engineering, AI/LLM integration, multi-tenant architectures, and modern web applications using FastAPI, Django, React.js, and PostgreSQL/MySQL. Proven expertise in building end-to-end data pipelines, vector search workflows (Qdrant), web scraping (Playwright, BeautifulSoup4), and responsive frontend interfaces."
 };
@@ -73,7 +73,7 @@ export const projects = [
     badge: "Featured",
     statusBadge: "Live Production SaaS",
     featured: true,
-    image: "/Portfolio/images/rag_project_img.png",
+    image: "./images/rag_project_img.png",
     overview: "A multi-tenant Agentic RAG platform transforming website assets into smart chatbots deployable via a lightweight CDN widget. Leverages Qdrant vector databases, text scraping/chunking pipelines, and LLM automation.",
     technologies: ["React.js", "FastAPI", "MySQL", "Qdrant DB"],
     bulletPoints: [
@@ -97,7 +97,7 @@ export const projects = [
     badge: "Enterprise SaaS",
     statusBadge: "Client Platform",
     featured: true,
-    image: "/Portfolio/images/hospital_saas_preview.jpg",
+    image: "./images/hospital_saas_preview.jpg",
     overview: "Multi-tenant, white-label healthcare platform with superadmin tenant provisioning, isolated databases per hospital, and custom-domain frontend deployments.",
     technologies: ["FastAPI", "React.js", "PostgreSQL", "Docker", "RBAC"],
     bulletPoints: [
@@ -121,7 +121,7 @@ export const projects = [
     badge: "AI & EdTech",
     statusBadge: "Client Platform",
     featured: true,
-    image: "/Portfolio/images/school_exam_preview.jpg",
+    image: "./images/school_exam_preview.jpg",
     overview: "Multi-tenant exam platform with automated OCR pipeline and AI question-generation engine converting PDFs and images into graded MCQ exams with parent monitoring.",
     technologies: ["FastAPI", "React.js", "OpenCV / OCR", "LLM APIs", "PostgreSQL"],
     bulletPoints: [
@@ -145,7 +145,7 @@ export const projects = [
     badge: "Featured",
     statusBadge: "Completed Project",
     featured: true,
-    image: "/Portfolio/images/restaurant project img.webp",
+    image: "./images/restaurant project img.webp",
     overview: "Role-based food ordering and admin analytics dashboard. Designed complete interfaces for carts, order placements, visual order tracking, and inventory updates using MVT pattern.",
     technologies: ["Django", "HTML5/CSS3", "JS", "SQLite"],
     bulletPoints: [
@@ -168,7 +168,7 @@ export const projects = [
     badge: "Academic Final",
     statusBadge: "Published Paper",
     featured: true,
-    image: "/Portfolio/images/beyond rollcall project img.webp",
+    image: "./images/beyond rollcall project img.webp",
     overview: "Desktop attendance system utilizing face detection and OCR algorithms to scan student identity cards. Implemented reporting modules and interactive Customtkinter control panels.",
     technologies: ["Python", "OpenCV", "EasyOCR", "Customtkinter"],
     bulletPoints: [
@@ -192,7 +192,7 @@ export const projects = [
     badge: null,
     statusBadge: "Live Deployed",
     featured: false,
-    image: "/Portfolio/images/apple india project img.webp",
+    image: "./images/apple india project img.webp",
     overview: "Pixel-perfect replica of Apple India landing site demonstrating responsive transitions, grid cards, sliders, and static CSS assets.",
     technologies: ["HTML", "CSS", "JavaScript"],
     bulletPoints: [
@@ -215,7 +215,7 @@ export const projects = [
     badge: null,
     statusBadge: "Demo Video",
     featured: false,
-    image: "/Portfolio/images/remind me later project img.webp",
+    image: "./images/remind me later project img.webp",
     overview: "Task manager with scheduled task alerts. Supports creation of customized to-do list tasks and automatic background notification dispatchers.",
     technologies: ["Django", "Bootstrap", "JavaScript"],
     bulletPoints: [
@@ -238,7 +238,7 @@ export const projects = [
     badge: null,
     statusBadge: "Demo Video",
     featured: false,
-    image: "/Portfolio/images/locker system project img.webp",
+    image: "./images/locker system project img.webp",
     overview: "Secure desk app utilizing face recognition verification, logging user login activities, data synchronization, and automated vault alerts.",
     technologies: ["Python", "OpenCV", "Face Recognition", "SQLite"],
     bulletPoints: [
@@ -261,7 +261,7 @@ export const projects = [
     badge: null,
     statusBadge: "Open Source",
     featured: false,
-    image: "/Portfolio/images/elective allocation project img.webp",
+    image: "./images/elective allocation project img.webp",
     overview: "Algorithmic allocating engine handling college student elective choices sorted based on merit list, score ranks, and college guidelines.",
     technologies: ["Python", "Pandas", "NumPy"],
     bulletPoints: [
@@ -284,7 +284,7 @@ export const projects = [
     badge: null,
     statusBadge: "Live Deployed",
     featured: false,
-    image: "/Portfolio/images/computer sales project img.webp",
+    image: "./images/computer sales project img.webp",
     overview: "Frontend client application presenting interactive product showcases, dynamic catalogs, cart status handling, and order summary templates.",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     bulletPoints: [
@@ -307,7 +307,7 @@ export const projects = [
     badge: null,
     statusBadge: "Live App",
     featured: false,
-    image: "/Portfolio/images/ats resume project img.webp",
+    image: "./images/ats resume project img.webp",
     overview: "Sleek dashboard parsing information to output standard ATS-friendly PDF resumes. Implemented template selection and instant data rendering.",
     technologies: ["Python", "Streamlit", "JSON"],
     bulletPoints: [
