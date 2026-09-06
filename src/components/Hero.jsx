@@ -146,7 +146,8 @@ export default function Hero() {
               </a>
 
               <a
-                href={personalInfo.localResumePdf}
+                href="https://drive.google.com/file/d/1JolvlIf6QSooyVZr5na6BF1sEh0yvKma/view"
+                target='_blank'
                 download="Tejas_Varute_Resume.pdf"
                 onClick={handleDownloadResume}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white text-slate-700 hover:text-sky-600 hover:border-sky-400 font-bold text-sm sm:text-base px-7 py-3.5 rounded-full border border-slate-300 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
