@@ -231,6 +231,34 @@ export default function Hero() {
                 </div>
               </div>
 
+              {/* Avatar Pose Switcher */}
+              <div className="mt-4 flex items-center gap-1.5 p-1 rounded-full bg-white/95 backdrop-blur-md border border-sky-200/90 shadow-md shadow-slate-900/5 z-20">
+                <button
+                  type="button"
+                  onClick={() => setAvatarPose('waving')}
+                  className={`px-3.5 py-1 rounded-full text-xs font-extrabold transition-all cursor-pointer flex items-center gap-1.5 ${
+                    avatarPose === 'waving'
+                      ? 'bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-xs'
+                      : 'text-slate-600 hover:text-sky-600'
+                  }`}
+                  title="Waving Avatar"
+                >
+                  <span>👋 Waving</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setAvatarPose('coding')}
+                  className={`px-3.5 py-1 rounded-full text-xs font-extrabold transition-all cursor-pointer flex items-center gap-1.5 ${
+                    avatarPose === 'coding'
+                      ? 'bg-gradient-to-r from-sky-600 to-blue-600 text-white shadow-xs'
+                      : 'text-slate-600 hover:text-sky-600'
+                  }`}
+                  title="Coding Avatar with Laptop"
+                >
+                  <span>💻 Coding</span>
+                </button>
+              </div>
+
               {/* Integrated Tech Stack Ribbon */}
               <div className="mt-3 flex items-center justify-center flex-wrap gap-1.5 px-4 py-2 rounded-full bg-white/90 backdrop-blur-md border border-sky-200/80 shadow-md shadow-slate-900/5 z-20">
                 {CORE_STACK.map((tech, idx) => (
