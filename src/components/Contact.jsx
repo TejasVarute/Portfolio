@@ -223,28 +223,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
-          <div className="flex flex-wrap items-center gap-3">
-            <a
-              href={personalInfo.localResumePdf}
-              download="Tejas_Varute_Resume.pdf"
-              onClick={handleDownloadResume}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow-md shadow-sky-500/25 transition-all"
-            >
-              <Download size={15} />
-              <span>Download Official Resume (PDF)</span>
-            </a>
-
-            <a
-              href={personalInfo.googleDriveCV}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 bg-white text-slate-700 hover:text-sky-600 font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full border border-slate-300 hover:border-sky-400 shadow-sm transition-all"
-            >
-              <span>Drive Link</span>
-              <ExternalLink size={13} />
-            </a>
-          </div>
         </div>
 
         {/* Toast Alert */}
