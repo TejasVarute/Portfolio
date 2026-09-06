@@ -5,12 +5,10 @@ import {
   MapPin,
   Copy,
   Check,
-  Download,
   ExternalLink,
   MessageCircle,
   ArrowUpRight
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { GithubIcon, LinkedinIcon } from './Icons';
 import { personalInfo } from '../data/resumeData';
 
@@ -28,15 +26,6 @@ export default function Contact() {
   const showToast = (msg) => {
     setToastMsg(msg);
     setTimeout(() => setToastMsg(''), 3000);
-  };
-
-  const handleDownloadResume = () => {
-    confetti({
-      particleCount: 80,
-      spread: 70,
-      origin: { y: 0.8 },
-      colors: ['#0284c7', '#2563eb', '#0ea5e9', '#38bdf8']
-    });
   };
 
   return (
